@@ -1,4 +1,4 @@
 projectEuler
 ============
 
-A repository of my solutions to various Project Euler Problems. 
+They're Project Euler problems in an already solved state. Not much more to it.
