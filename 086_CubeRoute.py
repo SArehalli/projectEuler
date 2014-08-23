@@ -1,12 +1,13 @@
 import time
 
-initTime = time.clock()
+#Start Timer
+init_Time = time.clock()
+
+#Do the thing. 
 M = 0 
 Cuboids = 0
 while Cuboids < 1000000:
     M += 1
-    if M % 100 == 0 :
-        print(str(M) + ' ' + str(time.clock() - initTime))
     for x in [(M,b) for b in range(2, 2*M+1)]:   
         d = (x[0]**2 + (x[1])**2)**(0.5)
         if int(d) == d:
@@ -18,4 +19,4 @@ while Cuboids < 1000000:
                 break
 
 print(M)
-print("Time used: " + str(time.clock() - initTime) + " seconds.")
+print("Solved in " + str(time.clock() - init_Time) + " seconds")
